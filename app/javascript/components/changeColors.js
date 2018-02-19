@@ -6,10 +6,10 @@ function initChangeColorsOnClick() {
   button.addEventListener("click", (event) => {
     event.preventDefault();
     study.forEach((i) => {
-      i.classList.add("blue");
+      i.classList.toggle("blue");
     });
     advisor.forEach((i) => {
-      i.classList.add("red");
+      i.classList.toggle("red");
     });
   });
 }
