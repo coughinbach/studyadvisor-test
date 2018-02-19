@@ -4,6 +4,7 @@ function initChangeColorsOnClick() {
   const advisor = document.querySelectorAll(".advisor");
 
   button.addEventListener("click", (event) => {
+    event.preventDefault();
     study.forEach((i) => {
       i.classList.add("blue");
     });
