@@ -1,0 +1,14 @@
+<a href="#" id="button">es6</a>
+<br>
+<% @numbers.each do |number| %>
+  <% if number.digit % 2 == 0 && number.digit % 5 == 0 %>
+    <p class="study">STUDY </p><p class="advisor">ADVISOR</p>
+  <% elsif number.digit % 2 == 0 %>
+    <p style="display:inline" class="study">STUDY</p>
+  <% elsif number.digit % 5 == 0  %>
+    <p style="display:inline" class="advisor">ADVISOR</p>
+  <% else  %>
+    <p><%= number.digit %></p>
+  <% end  %>
+  <br>
+<% end %>
