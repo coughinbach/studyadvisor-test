@@ -1,0 +1,4 @@
+<%= simple_form_for student, remote: true do |f| %>
+  <%= f.input :name, label: false, placeholder: "name here" %>
+  <%= f.submit 'edit', class: "btn btn-primary" %>
+<% end %>

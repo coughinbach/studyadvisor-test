@@ -1,0 +1,18 @@
+function displayUpdateForm() {
+  const buttons = document.querySelectorAll(".update_button");
+  const updateForm = document.querySelector("update_form");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      updateForm.classList.toggle("invisible");
+    });
+  })
+}
+
+function appendForm(form) {
+  const formSpot = document.querySelector("update_form_<%= student.id %>")
+  formSpot.insertAdjacentHTML('afterbegin', form);
+}
+
+displayUpdateForm();

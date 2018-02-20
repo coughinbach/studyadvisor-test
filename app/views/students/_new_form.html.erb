@@ -1,0 +1,5 @@
+<h3>add student:</h3>
+<%= simple_form_for student, remote: true do |f| %>
+  <%= f.input :name, label: false, placeholder: "name here" %>
+  <%= f.submit 'add to list', class: "btn btn-primary" %>
+<% end %>

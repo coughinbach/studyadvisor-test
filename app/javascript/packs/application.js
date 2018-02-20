@@ -9,5 +9,11 @@
 
 console.log('Hello World from Webpacker')
 
+import { displayEditForm } from '../components/displayEditForm';
+displayEditForm();
+
 import { initChangeColorsOnClick } from '../components/changeColors';
 initChangeColorsOnClick();
+
+
+
