@@ -1,17 +1,12 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-6 col-xs-offset-3">
-      <h1>list of students:</h1>
-
-      <div id="students">
-        <% @students.each do |student| %>
-          <%= render "show", student: student %>
-        <% end  %>
-      </div>
-
-      <div id="new_student">
-        <%= render "new_form", student: Student.new %>
-      </div>
-    </div>
-  </div>
+<h2>list of students:</h2>
+<div id="students">
+  <% @students.each do |student| %>
+    <%= render "show", student: student %>
+  <% end  %>
 </div>
+<div id="new_student">
+  <%= render "new_form", student: Student.new %>
+  <br>
+  <h4><%= link_to "<< back to home", root_path %></h4>
+</div>
+

@@ -1,17 +1,19 @@
-<%= link_to "back to home", root_path %>
+<h2>fizzbuzz advisor</h2>
+<h4><%= link_to "<< back to home", root_path %></h4>
 <br>
 <br>
-<button id="button">change colors!</button>
+<%= button_to "change colors", root_path, id: "button", class: "btn btn-primary" %>
 <br>
 <% @numbers.each do |number| %>
   <% if number.digit % 2 == 0 && number.digit % 5 == 0 %>
-    <p class="study">STUDY </p><p class="advisor">ADVISOR</p>
+    <p class="study">study </p><p class="advisor">advisor</p>
   <% elsif number.digit % 2 == 0 %>
-    <p style="display:inline" class="study">STUDY</p>
+    <p class="study">study</p>
   <% elsif number.digit % 5 == 0  %>
-    <p style="display:inline" class="advisor">ADVISOR</p>
+    <p class="advisor">advisor</p>
   <% else  %>
     <p><%= number.digit %></p>
   <% end  %>
   <br>
 <% end %>
+
