@@ -1,0 +1,12 @@
+function refreshForm(innerHTML) {
+  const newStudentForm = document.getElementById('new_student');
+  newStudentForm.innerHTML = innerHTML;
+}
+
+function addStudent(studentHTML) {
+  const students = document.getElementById('students');
+  students.insertAdjacentHTML('beforeend', studentHTML);
+}
+
+addStudent('<%= j render "show", student: @student %>');
+refreshForm('<%= j render "form", student: Student.new %>');

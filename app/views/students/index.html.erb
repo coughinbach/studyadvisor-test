@@ -1,12 +1,17 @@
-<% @students.each do |student| %>
-  <%= student.name %>
-  <%= link_to edit_student_path(student) do %>
-    edit
-  <% end %>
-  <%= link_to student_path(student), method: :delete, data: { confirm: "Remove #{student.name}?" } do %>
-    delete
-  <% end %>
-  <br>
-<% end  %>
-
-<%= link_to "add student", new_student_path %>
+<div id="new_student">
+    <%= render "form", student: Student.new %>
+</div>
+<div id="students">
+  <% @students.each do |student| %>
+    <div class="student">
+      <%= student.name %>
+      <%= link_to edit_student_path(student) do %>
+        edit
+      <% end %>
+      <%= link_to student_path(student), method: :delete, data: { confirm: "Remove #{student.name}?" } do %>
+        delete
+      <% end %>
+      <br>
+    </div>
+  <% end  %>
+</div>
