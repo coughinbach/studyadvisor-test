@@ -5,8 +5,8 @@ function displayEditForm() {
   buttons.forEach((button) => {
     button.addEventListener("click", (event) => {
       event.preventDefault();
-      const student = button.parentNode;
-      student.childNodes[5].classList.toggle("invisible");
+      const student = button.parentNode.parentNode;
+      student.childNodes[3].classList.toggle("invisible");
     });
   })
 }

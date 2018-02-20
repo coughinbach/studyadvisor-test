@@ -4,3 +4,25 @@
 .invisible {
   display: none;
 }
+
+#students {
+  margin-top: 20px;
+}
+
+.student {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.update_button {
+  margin: 0px 5px 0px 25px;
+}
+
+.form_space {
+  margin-top: 5px;
+}
+
+.new_student {
+  margin: 20px 0px;
+}
