@@ -8,17 +8,15 @@
 
       <div class="update_button">
         <i class="fa fa-pencil" aria-hidden="true"></i>
-
-
+      </div>
+      <div class="delete_button">
+        <%= link_to student_path(student), method: :delete, data: { confirm: "Remove #{student.name}?" } do %>
+        <i class="fa fa-trash" aria-hidden="true"></i>
+      <% end %>
+      </div>
       <div class="invisible">
         <%= render "edit_form", student: student %>
       </div>
-      </div>
-
-
-      <%#= link_to student_path(student), method: :delete, data: { confirm: "Remove #{student.name}?" } do %>
-        <!-- <i class="fa fa-trash" aria-hidden="true"></i> -->
-      <%# end %>
       <br>
     </div>
   <% end  %>
