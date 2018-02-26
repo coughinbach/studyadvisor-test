@@ -9,12 +9,13 @@ function displayEditForm() {
   //     student.childNodes[3].classList.toggle("invisible");
   //   });
   // })
-  const students = document.querySelectorAll('.student')
+  const students = document.querySelectorAll('.student');
 
   students.forEach((student) => {
     student.addEventListener("click", function (event) {
-      if (event.target.classList.contains('.update_form')) {
-        console.log("hi");
+      if (event.target.classList.contains('update_form')) {
+        event.preventDefault();
+        student.childNodes[5].classList.toggle("invisible");
       }
     })
   })
