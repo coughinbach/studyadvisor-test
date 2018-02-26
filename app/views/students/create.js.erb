@@ -10,3 +10,19 @@ function addStudent(studentHTML) {
 
 addStudent('<%= j render "show", student: @student %>');
 refreshForm('<%= j render "new_form", student: Student.new %>');
+
+
+// function displayEditForm() {
+//   const buttons = document.querySelectorAll(".update_button");
+//   const updateForm = document.querySelectorAll(".update_form");
+
+//   buttons.forEach((button) => {
+//     button.addEventListener("click", (event) => {
+//       event.preventDefault();
+//       const student = button.parentNode.parentNode;
+//       student.childNodes[3].classList.toggle("invisible");
+//     });
+//   })
+// }
+
+// displayEditForm();
