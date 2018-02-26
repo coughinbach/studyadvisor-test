@@ -2,7 +2,7 @@
 <h4><%= link_to "<< back to home", root_path %></h4>
 <br>
 <br>
-<%= button_to "change colors", root_path, id: "button", class: "btn btn-primary" %>
+<%= button_to "change colors", root_path, class: "btn btn-primary color_button" %>
 <br>
 <% @numbers.each do |number| %>
   <% if number.digit % 2 == 0 && number.digit % 5 == 0 %>

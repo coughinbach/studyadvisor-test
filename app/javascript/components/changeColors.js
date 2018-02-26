@@ -1,5 +1,5 @@
 function initChangeColorsOnClick() {
-  const button = document.getElementById("button");
+  const button = document.querySelector(".color_button");
   const study = document.querySelectorAll(".study");
   const advisor = document.querySelectorAll(".advisor");
 
