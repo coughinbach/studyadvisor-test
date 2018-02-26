@@ -1,12 +1,10 @@
 <h2>list of students:</h2>
+<div id="new_student">
+  <%= render "new_form", student: Student.new %>
+</div>
 <div id="students">
   <% @students.each do |student| %>
     <%= render "show", student: student %>
   <% end  %>
 </div>
-<div id="new_student">
-  <%= render "new_form", student: Student.new %>
-  <br>
-  <h4><%= link_to "<< back to home", root_path %></h4>
-</div>
-
+<h4><%= link_to "<< back to home", root_path %></h4>

@@ -13,7 +13,7 @@ function displayEditForm() {
 
   students.forEach((student) => {
     student.addEventListener("click", function (event) {
-      if (event.target.classList.contains('update_form')) {
+      if (event.target.classList.contains('fa')) {
         event.preventDefault();
         student.childNodes[5].classList.toggle("invisible");
       }

@@ -11,8 +11,9 @@
 
 .student {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   width: 100%;
+  margin: 15px 0px;
 }
 
 .update_button {
@@ -21,8 +22,10 @@
 
 .form_space {
   margin-top: 5px;
+  width: 100%;
 }
 
 .new_student {
   margin: 20px 0px;
 }
+
