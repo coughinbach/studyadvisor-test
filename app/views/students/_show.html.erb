@@ -1,9 +1,7 @@
   <div class=student>
     <%= student.name %>
     <div class="update_button">
-      <div>
-        <i class="fa fa-pencil" aria-hidden="true"></i>
-      </div>
+      <i class="fa fa-pencil" aria-hidden="true"></i>
     </div>
     <div class="delete_button">
       <%= link_to student_path(student), method: :delete, remote: true, data: { confirm: "Remove #{student.name}?" } do %>

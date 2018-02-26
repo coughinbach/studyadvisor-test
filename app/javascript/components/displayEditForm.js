@@ -25,12 +25,13 @@ function displayEditForm() {
 
   const students = document.getElementById("students");
   students.addEventListener("click", function (event) {
-    if (event.target.parentNode.parentNode.parentNode.childNodes[5].classList.contains("form_space")) {
-      const editBox = event.target.parentNode.parentNode.parentNode.childNodes[5];
+    if (event.target.classList.contains("fa")) {
+      const editBox = event.target.parentNode.parentNode.childNodes[5];
       editBox.classList.toggle("invisible");
-      console.log(event.target);
     }
   })
+
+
 }
 
 export { displayEditForm };
