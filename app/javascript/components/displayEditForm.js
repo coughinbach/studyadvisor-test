@@ -23,6 +23,8 @@ function displayEditForm() {
   //   })
   // })
 
+  console.log("hello from display")
+
   const students = document.getElementById("students");
   students.addEventListener("click", function (event) {
     if (event.target.classList.contains("fa")) {

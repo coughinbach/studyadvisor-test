@@ -1,3 +1,6 @@
+
+  console.log("hello from change")
+
 function initChangeColorsOnClick() {
   const button = document.querySelector(".color_button");
   const study = document.querySelectorAll(".study");
