@@ -1,20 +1,23 @@
-
-  console.log("hello from change")
+console.log("hello from change")
 
 function initChangeColorsOnClick() {
-  const button = document.querySelector(".color_button");
+  const colorButton = document.getElementById("colorButton");
   const study = document.querySelectorAll(".study");
   const advisor = document.querySelectorAll(".advisor");
 
-  button.addEventListener("click", (event) => {
-    event.preventDefault();
-    study.forEach((i) => {
-      i.classList.toggle("blue");
+  console.log(colorButton);
+
+  if (colorButton != null) {
+    colorButton.addEventListener("click", (event) => {
+      event.preventDefault();
+      study.forEach((i) => {
+        i.classList.toggle("blue");
+      });
+      advisor.forEach((i) => {
+        i.classList.toggle("red");
+      });
     });
-    advisor.forEach((i) => {
-      i.classList.toggle("red");
-    });
-  });
+  }
 }
 
 export { initChangeColorsOnClick };
